@@ -2,9 +2,34 @@ import "./App.css";
 
 function App() {
   return (
-    <>
-      <h1>Hello World!</h1>
-    </>
+    <div className="container mt-5">
+      <div className="card">
+        <div className="card-header">Your Todo's</div>
+        <div className="card-body">
+          <table className="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Description</th>
+                <th scope="col">Assigned</th>
+              </tr>
+            </thead>
+            <tbody className="table-group-divider">
+              <tr>
+                <th scope="row">1</th>
+                <td>Feed dog</td>
+                <td>Eric</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Get haircut</td>
+                <td>Eric</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   );
 }
 
