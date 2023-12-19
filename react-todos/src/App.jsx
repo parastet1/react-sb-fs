@@ -1,3 +1,4 @@
+import TodoRowItem from "./components/TodoRowItem";
 import "./App.css";
 
 function App() {
@@ -15,16 +16,16 @@ function App() {
               </tr>
             </thead>
             <tbody className="table-group-divider">
-              <tr>
-                <th scope="row">1</th>
-                <td>Feed dog</td>
-                <td>Eric</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Get haircut</td>
-                <td>Eric</td>
-              </tr>
+              <TodoRowItem
+                todoNum="1"
+                todoDescription="Feed dog"
+                todoAssigned="Eric"
+              />
+              <TodoRowItem
+                todoNum="2"
+                todoDescription="Get haircut"
+                todoAssigned="Eric"
+              />
             </tbody>
           </table>
         </div>
